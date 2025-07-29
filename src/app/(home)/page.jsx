@@ -1,7 +1,10 @@
+import data from "@/lib/data";
+import { HomeCarousel } from "./HomeCarousel";
+
 export default async function Page() {
   return (
     <div>
-      <h1 className="h1-bold text-center p-10">Home Page Content</h1>
+      <HomeCarousel items={data.carousels} />
     </div>
   );
 }
